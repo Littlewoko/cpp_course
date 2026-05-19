@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 void mightGoWrong() {
 
     bool err = true;
@@ -10,7 +12,12 @@ void mightGoWrong() {
 }
 
 int main() {
-    mightGoWrong();
+    try {
+        mightGoWrong();
+
+    } catch (int e) {
+        cout << "Error code " << e << endl;
+    }
 
     return 0;
 }
