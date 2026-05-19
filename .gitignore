@@ -67,3 +67,17 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# clang
+# Compiled output
+*.out
+*.o
+*.dSYM/
+
+# Debug
+*.dSYM
+*.dwarf
+
+# Build directories
+build/
+
