@@ -63,7 +63,7 @@ class ring<T>::iterator {
             return _ring.get(_pos);
         }
 
-        bool operator!=(const iterator &other) const {
+        bool operator!=(iterator &other) const {
             return _pos != other._pos;
         }
 };
